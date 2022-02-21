@@ -71,23 +71,23 @@
 
     <div
       id="intro"
-      class="container-fluid d-flex justify-content-center align-items-center"
+      class="container-fluid d-flex justify-content-center align-items-start"
     >
       <div
-        class="container d-flex justify-content-center align-items-center flex-column container_intro"
+        class="container d-flex justify-content-start align-items-center flex-column container_intro"
       >
         <img src="./images/illustration-intro.png" alt="intro" />
-        <h1 class="text-center mt-3 my-md-3">
+        <h1 class="text-center my-md-2">
           All your files in one secure location, accessible anywhere.
         </h1>
-        <p class="text-center my-md-3">
+        <p class="text-center my-md-2">
           Fylo stores all your most important files in one secure location.
           Access them wherever you need, share and collaborate with friends
           family, and co-workers.
         </p>
         <a
           id="get_started"
-          class="rounded-pill d-flex justify-content-center align-items-center my-md-3"
+          class="rounded-pill d-flex justify-content-center align-items-center mt-md-2"
           href="#sign_in"
           >Get Started</a
         >
@@ -260,7 +260,7 @@
             </div>
           </div>
 
-          <div class="col-12 mb-3 col-lg-2">
+          <div class="col-12 mb-3 col-lg-3">
             <div class="d-flex">
               <i class="bi bi-telephone-fill"></i>
               <div class="description_icon ms-2">+1-543-123-4567</div>
@@ -284,7 +284,7 @@
             <a href="#" class="links">Privacy</a>
           </div>
 
-          <div class="col-12 col-md-3">
+          <div class="col-12 col-md-2">
             <div
               class="container social d-flex justify-content-around align-items-center"
             >
@@ -322,6 +322,10 @@
       }
 
       sendButton.addEventListener('click', verify);
+
+      (function clean() {
+        document.querySelector('form').reset();
+      })();
     </script>
   </body>
 </html>
